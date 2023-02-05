@@ -3,9 +3,9 @@ require("dotenv").config()
 const express = require("express");
 // const db = require("../config/database.js");
 const morgan = require("morgan");
-const cookieParser = require("cookie-parser");
+// const cookieParser = require("cookie-parser");
 const path = require("path");
-const session = require("express-session");
+// const session = require("express-session");
 const { pageNotFound,errorHandler } = require("../middlewares/errorHandler");
 
 const app = express();
@@ -13,11 +13,11 @@ const app = express();
 app.use(express.json());
 
 // session 
-app.use(session({
-	resave: false,
-	saveUninitialized: false,
-	secret: process.env.SECRET_KEY
-}))
+// app.use(session({
+// 	resave: false,
+// 	saveUninitialized: false,
+// 	secret: process.env.SECRET_KEY
+// }))
 
 app.disable("x-powered-by");
 
@@ -25,7 +25,7 @@ app.disable("x-powered-by");
 // app.use(morgan("tiny"));
 
 // cookie-parser
-app.use(cookieParser());
+// app.use(cookieParser());
 
 // template engine EJS
 app.set("view engine","ejs");
