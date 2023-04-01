@@ -1,0 +1,46 @@
+<%# Import Head %>
+    <%- include("header.ejs") %>
+
+        <body>
+            <%- include("navbar.ejs") %>
+                <div class="my-5"></div>
+
+                <main id="main" class="p-4 container my-5">
+                    <form action="/login" method="post" class="my-5 p-3 rounded">
+                        <% if(message) {%>
+                            <h1 class="lead text-danger">
+                                <%= message %>
+                            </h1>
+                            <%}%>
+                                <div class="my-4">
+                                    <h class="nav-link text-uppercase">Login</h2>
+                                </div>
+                                <div class="form-group my-3">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" name="email"
+                                            placeholder="Enter your email">
+                                        <label for="email">Enter your email</label>
+                                    </div>
+                                </div>
+                                <div class="form-group my-5">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" name="password"
+                                            placeholder="Enter your password" required>
+                                        <label for="password">Enter your password</label>
+                                    </div>
+                                </div>
+                                <div class="form-group my-5">
+                                    <button type="submit"
+                                        style="background-color: rgba(59, 81, 167, 0.81); border: none;"
+                                        class="w-100 p-3 text-white">Login</button>
+                                </div>
+                                <div class="form-group my-5 text-center">
+                                    <a href="/register">Don't have an account?</a>
+                                </div>
+                    </form>
+                </main>
+
+                <%# Import Footer %>
+                    <%- include("footer.ejs") %>
+
+        </body>

@@ -7,7 +7,16 @@
     "start": "node .",
     "dev": "nodemon"
   },
-  "keywords": ["express","express-session","cookie-parser","morgan","ejs","cors","mysql","joi"],
+  "keywords": [
+    "express",
+    "express-session",
+    "cookie-parser",
+    "morgan",
+    "ejs",
+    "cors",
+    "mysql",
+    "joi"
+  ],
   "author": "Khalid Zikirullah",
   "license": "ISC",
   "dependencies": {
@@ -20,7 +29,7 @@
     "joi": "^17.7.0",
     "mongoose": "^6.9.0",
     "morgan": "^1.10.0",
-    "mysql": "^2.18.1"
+    "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"

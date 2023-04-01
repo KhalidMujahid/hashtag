@@ -1,8 +1,9 @@
-const mysql = require("mysql");
+const mongoose = require("mongoose");
 
-const db = mysql.createConnection(process.env.DATABASE_URL);
+async function dbconnect() {
+  mongoose.set("strictQuery", false);
+  await mongoose.connect(process.env.MONGO_URI);
+  console.log("DB connected");
+}
 
-console.log("DB connected");
-db.end();
-
-module.exports = db;
+module.exports = dbconnect;

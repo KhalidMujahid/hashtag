@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hashtag | Dashboard</title>
+    <!--icons -->
+    <link href="assets/img/favicon.jpg" rel="icon" />
+    <link href="assets/img/favicon.jpg" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet"> -->
+
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/css/variables.css" rel="stylesheet" />
+    <link href="assets/css/variables-purple.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top" data-scrollto-offset="0">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            <a href="/" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+                <h1>Hashtag<span>.</span></h1>
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li class="dropdown">
+                        <a href="/"><span>Home</span></a>
+                    </li>
+                    <li><a class="nav-link scrollto" href="/portfolio">Portfolio</a></li>
+                    <li><a class="nav-link scrollto" href="/profile">Profile</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle d-none"></i>
+            </nav>
+            <!-- .navbar -->
+
+            <a class="btn-getstarted scrollto" href="/logout">Logout</a>
+        </div>
+    </header>
+    <!-- End Header -->
+    <section id="hero-animated" class="hero-animated d-flex align-items-center">
+        <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative"
+            data-aos="zoom-out">
+            <h2>Welcome <span>
+                    <%= user.fname %>
+                        <%= user.lname %>
+                </span></h2>
+            <p>Et voluptate esse accusantium accusamus natus reiciendis quidem voluptates similique aut.</p>
+        </div>
+    </section>
+    <div class="my-5 container">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse minus quidem quis amet labore ad nulla. Saepe
+            nesciunt enim dolorum officia porro, adipisci temporibus odio molestiae distinctio amet facilis nemo? Vel
+            nulla mollitia sed perferendis placeat, labore ipsum quo. Provident autem deserunt at, quod, consectetur
+            adipisci magni corrupti maxime deleniti facere nesciunt voluptate ullam earum, temporibus accusamus
+            necessitatibus explicabo quia! Nesciunt velit obcaecati sequi. Perspiciatis minus magnam laboriosam pariatur
+            error ullam repellat, odio obcaecati ex, rerum debitis fugiat commodi nostrum incidunt adipisci, nulla
+            voluptate quod laudantium ratione! Tempore et dolore eveniet vitae placeat nihil vel velit natus, accusamus,
+            distinctio veniam.</p>
+    </div>
+
+    <%- include("footer.ejs") %>
+</body>
+
+</html>
