@@ -64,7 +64,7 @@ router.get("/profile", loggedHandler, (req, res, next) => {
 router.get("/logout", (req, res, next) => {
   try {
     if (req.session.isLoggedIn) {
-      req.session.destory();
+      req.session.destroy();
       // res.destroy();
       res.redirect("/login");
     }
