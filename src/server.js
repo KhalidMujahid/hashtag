@@ -5,11 +5,9 @@ const express = require("express");
 const cookieParser = require("cookie-parser");
 const path = require("path");
 const session = require("express-session");
-const { pageNotFound, errorHandler } = require("../middlewares/errorHandler");
+const { pageNotFound, errorHandler } = require("./middlewares/errorHandler");
 
 const app = express();
-
-app.use(express.json());
 
 // session
 app.use(
@@ -38,7 +36,7 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "../", "public")));
 
 // routes
-app.use("/", require("../routes/router.routes"));
+app.use("/", require("./routes/router.routes"));
 
 // page not found handler
 app.use(pageNotFound);

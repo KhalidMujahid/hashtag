@@ -1,6 +1,6 @@
 const app = require("./src/server.js");
 const PORT = process.env.PORT || 3000;
-const dbconnect = require("./config/database");
+const dbconnect = require("./src/config/database");
 
 dbconnect()
   .then(() => {

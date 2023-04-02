@@ -9,5 +9,6 @@ module.exports.pageNotFound = (req, res, next) => {
 module.exports.errorHandler = (error, req, res, next) => {
   const statusCode = res.statusCode === 200 ? 500 : res.statusCode;
   res.status(statusCode);
+  console.log(error);
   res.send(error);
 };
